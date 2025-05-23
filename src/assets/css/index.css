@@ -1,0 +1,38 @@
+.upper-main {
+  min-height: 100px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+}
+
+.upper-main h1 {
+  margin-left: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+}
+
+.card {
+  width: 500px;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.active {
+  background-color: #ffc107;
+  color: black;
+}
