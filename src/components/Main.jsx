@@ -15,7 +15,7 @@ export default function Main() {
           setSelectedLanguage(language);
         }}
         className={
-          selectedLanguage.id === language.id
+          selectedLanguage?.id === language.id
             ? "btn btn-warning"
             : "btn btn-primary"
         }
@@ -30,12 +30,11 @@ export default function Main() {
       </div>
       <div className="container">
         <ul>{buttons}</ul>
-        {selectedLanguage && (
-          <CardGenerator
-            title={selectedLanguage.title}
-            description={selectedLanguage.description}
-          />
-        )}
+
+        <CardGenerator
+          title={selectedLanguage?.title || "Nessun linguaggio selezionato"}
+          description={selectedLanguage?.description || ""}
+        />
       </div>
     </>
   );
