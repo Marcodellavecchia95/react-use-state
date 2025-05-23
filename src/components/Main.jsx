@@ -14,6 +14,11 @@ export default function Main() {
         onClick={() => {
           setSelectedLanguage(language);
         }}
+        className={
+          selectedLanguage.id === language.id
+            ? "btn btn-warning"
+            : "btn btn-primary"
+        }
       />
     );
   });
